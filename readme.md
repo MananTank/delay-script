@@ -11,13 +11,13 @@ Delay Loading of Non Critical Scripts
 
 ## Setup
 
-- Include delay-script.min.js code in your page
+- Include [dist/delay-script.min.js](dist/delay-script.min.js) code in your page
 - Set `type="text/delay"` on the scripts you wish to delay
-- Call `loadDelayScripts` to load all the delay scripts
+- Call `loadDelayScripts` _when_ you want to load all the delay scripts
 
 ### Example
 
-View [Example HTML](/example/index.html)
+View [Example HTML](https://github.com/MananTank/delay-script/tree/main/example)
 
 ```html
 <script type="text/delay" src="foo.js"></script>
@@ -27,10 +27,10 @@ View [Example HTML](/example/index.html)
 
 ```javascript
 // load delay-scripts after load event is fired
-window.addEventListener("load", () => {
-  loadDelayScripts(() => {
-    console.log("done");
-  });
+window.addEventListener('load', () => {
+	loadDelayScripts(() => {
+		console.log('done');
+	});
 });
 ```
 
