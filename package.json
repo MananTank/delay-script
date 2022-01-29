@@ -2,14 +2,14 @@
   "name": "delay-script",
   "version": "1.0.0",
   "description": "Delay Loading of Non Critical Scripts",
-  "main": "src/delay-script.js",
-  "browser": "src/delay-script.min.js",
+  "main": "delay-script.js",
   "keywords": [
     "delay-script",
     "script-loading",
     "inject-script"
   ],
   "scripts": {
+    "min": "terser src/delay-script.js -c -m -o dist/delay-script.min.js",
     "lint": "prettier . -w"
   },
   "author": "Manan Tank",
@@ -20,6 +20,7 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "terser": "^5.10.0"
   }
 }

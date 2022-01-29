@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>delay-script example</title>
-  </head>
-  <body>
-    <!-- delay-script.js and it's usage -->
-    <script src="/src/delay-script.min.js"></script>
-    <script>
-      window.addEventListener("load", () => {
-        loadDelayScripts(() => {
-          console.log("done");
-        });
-      });
-    </script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>delay-script example</title>
+	</head>
+	<body>
+		<!-- delay-script.js and it's usage -->
+		<script src="/dist/delay-script.min.js"></script>
+		<script>
+			window.addEventListener('load', () => {
+				loadDelayScripts(() => {
+					console.log('done');
+				});
+			});
+		</script>
 
-    <!-- delay scripts  -->
-    <script type="text/delay" src="/example/scripts/1.js"></script>
-    <script type="text/delay">
-      console.log(2)
-    </script>
-    <script type="text/delay" src="/example/scripts/3.js"></script>
-    <script type="text/delay">
-      console.log(4)
-    </script>
-    <script type="text/delay" src="/example/scripts/5.js"></script>
-  </body>
+		<!-- delay scripts  -->
+		<script type="text/delay" src="/example/scripts/1.js"></script>
+		<script type="text/delay">
+			console.log(2)
+		</script>
+		<script type="text/delay" src="/example/scripts/3.js"></script>
+		<script type="text/delay">
+			console.log(4)
+		</script>
+		<script type="text/delay" src="/example/scripts/5.js"></script>
+	</body>
 </html>
