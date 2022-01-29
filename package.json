@@ -9,6 +9,9 @@
     "script-loading",
     "inject-script"
   ],
+  "scripts": {
+    "lint": "prettier . -w"
+  },
   "author": "Manan Tank",
   "license": "ISC",
   "devDependencies": {

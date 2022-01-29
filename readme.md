@@ -27,10 +27,10 @@ View [Example HTML](/example/index.html)
 
 ```javascript
 // load delay-scripts after load event is fired
-window.addEventListener('load', () => {
-	loadDelayScripts(() => {
-		console.log('done');
-	});
+window.addEventListener("load", () => {
+  loadDelayScripts(() => {
+    console.log("done");
+  });
 });
 ```
 
